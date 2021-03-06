@@ -6,6 +6,7 @@
 #
 # David Smith
 # 6/6/2020
+# License: MIT
 
 import enum
 import time
@@ -19,7 +20,7 @@ class PushoverNotificationService:
     Class to simplify use of the Pushover notification service API.
     """
 
-    version = "1.0"
+    VERSION = "1.0"
 
     # URL of the pushover service
     PUSHOVER_API_URL = "https://api.pushover.net/1/messages.json"
