@@ -9,14 +9,14 @@ Steps to use:
 <ol>
     <li>Create a pushover account at https://pushover.net/</li>
     <li>Sign in to your pushover account</li>
-    <li>Use the site to generate an API KEY and a USER KEY for your application</li>
+    <li>Use the site to generate an API_KEY and a USER_KEY for your application</li>
     <li>Place this pushover python package in your application's folder</li>
     <li>Insure the requests library is installed (pip install requests)</li>
     <li>Include "from pushover import PushoverNotificationService" in your code</li>
-    <li>Create a PushoverNotificationService object using your API KEY and USER KEY</li>
+    <li>Create a PushoverNotificationService object using your API_KEY and USER_KEY</li>
     <li>Send notifications using this object
         <div>Example:</div>             
-<pre>po = PushoverNotificationService(USER KEY, API KEY)
+<pre>po = PushoverNotificationService(USER_KEY, API_KEY)
 po.notify("This is a notification.")</pre>
     </li>    
 </ol>
@@ -24,7 +24,7 @@ po.notify("This is a notification.")</pre>
 Package Documentation:
 <blockquote>
 <pre>
-class PushoverNotificationService(user_key, api_key)
+class PushoverNotificationService(user_key: str, api_key: str)
     :param user_key: Pushover user key.
     :param api_key: Pushover api key.
 
